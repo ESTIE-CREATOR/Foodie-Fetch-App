@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Fetch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+   <div class="home-page">
+    <canvas id="starCanvas"></canvas>
+    <div class="header-section" id="header-section">
+        <header class="header">
+            <div class="foodie-fetch-logo">
+                <img src="https://foodie-fetch.jeremy0x.codes/src/icons/apple-touch-icon.png" alt="ff-logo">
+                <p class="foodie-fetch-logo-text">foodieFetch</p>
+            </div>
+            <div class="github-section">
+               <a href="https://github.co/yourprofile">
+                 <button class="github">
+                <i class="fab fa-github"></i>
+                    <p class="github-p">Star on Github</p>
+                </button>
+            </a>
+            </div>
+        </header>
+    </div>
+            <div class="main-section">
+            <main class="main">
+                <h1>Find <span class="variant-color">Recipes</span> with the <span class="variant-color-2">Ingredients</span> You Have! 🧅🍅</h1>
+                <div class="quote-container">
+                    <p class="quote">
+                        <span class="quote-mark">❝</span> 
+                        <span id="quote-text">
+                    </span>
+                        <span class="quote-mark">❞</span>
+                    </p>
+                    <div class="author">
+                        <i class="fas fa-comments"></i> 
+                        <span class="author-name" id="author-name"></span>
+                    </div>
+                </div>
+                <div class="bigger-input-container">
+                <div class="input-section">
+                    <div class="search-btn">
+                        <img src="/images/Screenshot_2025-03-01_165138-removebg-preview (1).png" alt="">
+                    </div>
+                    <input type="text" placeholder="Enter an ingredient to search recipes 🥗..." id="text-input">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div id="loading" class="loading-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            </main>
+            <div id="result-container">
+                <h2 id="result-heading" class="result-heading"></h2> <!-- Heading for search results -->
+                <div id="result-message"></div> <!-- Error or No Results message -->
+                <div id="result" class="meal-grid"></div> <!-- Meal Grid -->
+            </div>
+
+            <div id="recipeModal" class="modal">
+
+                <div class="modal-content">
+
+                    <div class="Heading1">
+                <h1 id="Recipe-Detail-heading" class="Recipe-Detail-heading"></h1> 
+                <button id="exit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M6 6L18 18M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
+               </div>
+
+                <div class="divider-hidden"></div>
+
+                <div class="Heading2">
+                <h2>Recipe Preparation 📝🍳</h2>
+                <div>
+                    <p>🍽️ Dessert</p>
+                </div>
+                </div>
+
+                <div id="Recipe-Detail"></div>
+
+                <div class="divider-hidden"></div>
+
+                <div class="video-container-real">
+                    <h2>Recipe Tutorial Video 🎥👨‍🍳</h2>
+                    <div class="video-container">
+                        <iframe id="recipe-video" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+            </div>
+
+            </div>
+            </div>
+        </div>
+        <div class="lower-part">
+        <div class="foodie-fetch-logo-2">
+                <img src="https://foodie-fetch.jeremy0x.codes/src/icons/apple-touch-icon.png" alt="ff-logo">
+               <p class="foodie-fetch-logo-text-2">foodieFetch</p>
+        </div>
+        <div class="divider"></div>
+        <div class="footer">
+            <footer>
+                    <div class="footer-text">
+                    <p><span>©</span> 2025 foodFetch <span class="tm-logo">™</span>. Developed by <span class="variant-color-3">Esther</span></p>
+                </div>
+                <div class="buy-me-a-coffee">
+                    <div class="buy-me-a-coffee-container">
+                    <a href="">
+                            <img src="https://foodie-fetch.jeremy0x.codes/src/img/bmc-button.png">
+                        </a>
+                    </div>
+                        </div>
+                        <div class="contact-icons">
+                            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fahttps://foodie-fetch.jeremy0x.codes/src/img/bmc-button.png" alt="Buy me a cofffe" class="buy-me-a-coffee-twitter"></i></a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+   </div> 
+</div>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
